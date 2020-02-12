@@ -1,0 +1,17 @@
+{% macro AppContainer(defaultSlot) %}
+  <section class="app-container">
+    <div class="app-container__wrapper">
+      <header class="app-container__header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <div class="app-container__slot-wrap">
+
+        {{ defaultSlot }}
+
+      </div>
+    </div>
+  </section>
+{% endmacro %}

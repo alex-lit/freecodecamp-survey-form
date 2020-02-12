@@ -1,0 +1,41 @@
+.survey-form {
+  position: relative;
+  display: grid;
+  grid-gap: 20px;
+  color: var(--white);
+  background-color: color-mod(var(--gray--900) alpha(0.8));
+  padding: 40px;
+  border-radius: 4px;
+
+  & label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  & input:not([type="radio"]):not([type="checkbox"]),
+  & select,
+  & textarea {
+    width: 100%;
+  }
+
+  & input[type="radio"],
+  & input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  & textarea {
+    min-height: 100px;
+  }
+
+  & button {
+    width: 100%;
+    background-color: var(--green);
+    color: var(--white);
+    border-color: var(--green--900);
+
+    &:hover {
+      background-color: var(--green--300);
+    }
+  }
+}

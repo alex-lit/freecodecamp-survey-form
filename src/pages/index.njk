@@ -1,0 +1,8 @@
+{% extends "layouts/default.njk" %}
+
+{% from 'components/app-container/app-container.template.njk' import AppContainer %}
+{% from 'components/survey-form/survey-form.template.njk' import SurveyForm %}
+
+{% block page %}
+    {{ AppContainer( defaultSlot = SurveyForm() ) }}
+{% endblock %}
